@@ -46,8 +46,8 @@ public:
   size_type max_size() const;
   void erase(iterator pos);
 
-  template <typename... Args> iterator emplace(iterator pos, Args &&...args);
-  template <typename... Args> void emplace_back(Args &&...args);
+  template <typename... Args> iterator emplace(iterator pos, Args &&... args);
+  template <typename... Args> void emplace_back(Args &&... args);
 
 private:
   void memory_allocation();

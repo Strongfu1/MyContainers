@@ -22,7 +22,7 @@ public:
   ~multiset();
   multiset &operator=(multiset &&ms);
 
-  template <typename... Args> vector<iterator> emplace(Args &&...args);
+  template <typename... Args> vector<iterator> emplace(Args &&... args);
 
   iterator insert(const value_type &value);
   void erase(iterator pos);

@@ -103,6 +103,6 @@ template <class T> inline void s21::stack<T>::destroy() {
 
 template <typename T>
 template <typename... Args>
-void s21::stack<T>::emplace_front(Args &&...args) {
+void s21::stack<T>::emplace_front(Args &&... args) {
   (push(args), ...);
 }

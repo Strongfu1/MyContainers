@@ -50,7 +50,7 @@ public:
   iterator end() const;
 
   template <typename... Args>
-  vector<std::pair<iterator, bool>> emplace(Args &&...args);
+  vector<std::pair<iterator, bool>> emplace(Args &&... args);
 
   void print();
 

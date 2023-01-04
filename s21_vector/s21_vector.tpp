@@ -229,7 +229,7 @@ template <typename T> void vector<T>::swap(vector &other) {
 
 template <typename T>
 template <typename... Args>
-T *s21::vector<T>::emplace(T *pos, Args &&...args) {
+T *s21::vector<T>::emplace(T *pos, Args &&... args) {
   size_t iter = 0;
   if (pos >= begin() && pos <= end()) {
     iter = pos - arr_;
@@ -243,7 +243,7 @@ T *s21::vector<T>::emplace(T *pos, Args &&...args) {
 
 template <typename T>
 template <typename... Args>
-void s21::vector<T>::emplace_back(Args &&...args) {
+void s21::vector<T>::emplace_back(Args &&... args) {
   if (capacity_ < size_ + sizeof...(args)) {
     reserve(size_ + sizeof...(args));
   }

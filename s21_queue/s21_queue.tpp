@@ -93,7 +93,7 @@ template <typename T> void s21::queue<T>::swap(queue &other) {
 
 template <typename T>
 template <typename... Args>
-void s21::queue<T>::emplace_back(Args &&...args) {
+void s21::queue<T>::emplace_back(Args &&... args) {
   (push(args), ...);
 }
 

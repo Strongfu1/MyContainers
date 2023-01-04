@@ -82,9 +82,9 @@ public:
   void sort();
 
   template <typename... Args>
-  iterator emplace(const_iterator pos, Args &&...args);
-  template <typename... Args> void emplace_back(Args &&...args);
-  template <typename... Args> void emplace_front(Args &&...args);
+  iterator emplace(const_iterator pos, Args &&... args);
+  template <typename... Args> void emplace_back(Args &&... args);
+  template <typename... Args> void emplace_front(Args &&... args);
 
 private:
   size_type size_;

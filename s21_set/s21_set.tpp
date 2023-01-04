@@ -69,7 +69,7 @@ void set<Key, Value>::merge(set &other) {
 template <typename Key, typename Value>
 template <typename... Args>
 vector<std::pair<typename set<Key, Value>::iterator, bool>>
-set<Key, Value>::emplace(Args &&...args) {
+set<Key, Value>::emplace(Args &&... args) {
   vector<std::pair<typename set<Key, Value>::iterator, bool>> v(
       sizeof...(args));
   size_t i = 0;

@@ -100,7 +100,7 @@ multiset<Key, Value>::upper_bound(const Key &value) {
 template <typename Key, typename Value>
 template <typename... Args>
 vector<typename multiset<Key, Value>::iterator>
-multiset<Key, Value>::emplace(Args &&...args) {
+multiset<Key, Value>::emplace(Args &&... args) {
   vector<multiset<Key, Value>::iterator> v(sizeof...(args));
   size_t i = 0;
   ((v[i++] = (insert(args))), ...);

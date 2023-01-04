@@ -26,7 +26,7 @@ public:
   bool empty() const;
   size_type size() const;
 
-  template <typename... Args> void emplace_back(Args &&...args);
+  template <typename... Args> void emplace_back(Args &&... args);
 
 private:
   size_type size_;

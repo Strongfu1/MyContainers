@@ -34,7 +34,7 @@ public:
   void merge(map &other);
 
   template <typename... Args>
-  s21::vector<std::pair<iterator, bool>> emplace(Args &&...args);
+  s21::vector<std::pair<iterator, bool>> emplace(Args &&... args);
 };
 
 #include "s21_map.tpp"

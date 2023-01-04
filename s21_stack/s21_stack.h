@@ -30,7 +30,7 @@ public:
   const_reference top() const;
   void swap(stack &other);
 
-  template <typename... Args> void emplace_front(Args &&...args);
+  template <typename... Args> void emplace_front(Args &&... args);
 
 private:
   size_type size_;

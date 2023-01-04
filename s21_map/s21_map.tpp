@@ -112,7 +112,7 @@ map<Key, Value>::insert_or_assign(const Key &key, const Value &obj) {
 template <typename Key, typename Value>
 template <typename... Args>
 vector<std::pair<typename map<Key, Value>::iterator, bool>>
-map<Key, Value>::emplace(Args &&...args) {
+map<Key, Value>::emplace(Args &&... args) {
   vector<std::pair<map<Key, Value>::iterator, bool>> v;
   v.reserve(sizeof...(args));
   size_t i = 0;

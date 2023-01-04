@@ -330,20 +330,20 @@ typename s21::list<T>::iterator s21::list<T>::insert(s21::list<T>::iterator it,
 template <typename T>
 template <typename... Args>
 typename s21::list<T>::iterator s21::list<T>::emplace(const_iterator pos,
-                                                      Args &&...args) {
+                                                      Args &&... args) {
   (insert(iterator(const_cast<Node *>(pos.pos_)), args), ...);
   return iterator(front_node_);
 }
 
 template <typename T>
 template <typename... Args>
-void s21::list<T>::emplace_back(Args &&...args) {
+void s21::list<T>::emplace_back(Args &&... args) {
   (push_back(args), ...);
 }
 
 template <typename T>
 template <typename... Args>
-void s21::list<T>::emplace_front(Args &&...args) {
+void s21::list<T>::emplace_front(Args &&... args) {
   iterator iter(front_node_);
   (insert(iter, args), ...);
 }
